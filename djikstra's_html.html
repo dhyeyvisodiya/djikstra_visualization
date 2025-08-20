@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra Algorithm Visualization</title>
+    <link rel="stylesheet" href="dd.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Dijkstra Algorithm Visualization</h1>
+        <p>Visualize the shortest path using Dijkstra's algorithm with interactive nodes and edges.</p>
+    </div>
+
+    <div class="container">
+        <p class="description">
+            Click on the canvas to add nodes, create edges, delete nodes, and visualize the shortest path.
+        </p>
+        
+        <div class="controls">
+            <label for="source">Source:</label>
+            <input type="number" id="source" min="1">
+            <label for="destination">Destination:</label>
+            <input type="number" id="destination" min="1">
+            <button id="findPath">Find Path</button>
+        </div>
+
+        <div class="controls">
+            <label for="fromNode">From Node:</label>
+            <input type="number" id="fromNode" min="1">
+            <label for="toNode">To Node:</label>
+            <input type="number" id="toNode" min="1">
+            <label for="edgeWeight">Weight:</label>
+            <input type="number" id="edgeWeight" min="1">
+            <button id="addEdge">Add Edge</button>
+        </div>
+
+        <div class="controls">
+            <label for="deleteNodeInput">Delete Node:</label>
+            <input type="number" id="deleteNodeInput" min="1">
+            <button id="deleteNode">Delete Node</button>
+        </div>
+
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div id="output"></div>
+    </div>
+
+    <script src="dd.js"></script>
+</body>
+</html>
